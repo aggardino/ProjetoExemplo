@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ProjetoExemplo.Models.Product>
+
+<!DOCTYPE html>
+<html>
+    <head charset="utf-8">
+        <title>Lista de Produtos</title>
+    </head>
+    <body>
+        <h1>Produtos</h1>
+        <ul>
+            @foreach (var product in Model)
+            {
+                <li>@product.Name - @product.Price.ToString("C")</li>
+            }
+        </ul>
+    </body>
+</html>
